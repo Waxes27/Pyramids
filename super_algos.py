@@ -42,7 +42,9 @@ def sum_all(element):
 
 
 def find_possible_strings(character_set, n):
-    for i in range(len(text)):
+    if n = len(step):
+        print(character_set)
+    for i in range(n, len(character_set))
 
 if __name__ == "__main__":
     find_possible_strings(character_set, n)
