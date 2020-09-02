@@ -20,3 +20,6 @@ class Test_super_algos(unittest.TestCase):
         self.assertEqual(['aaa', 'aab', 'aba', 'abb', 'baa', 'bab', 'bba', 'bbb'], result)
         result = super_algos.find_possible_strings(['a','b'],1)
         self.assertEqual(result,['a','b'])
+
+
+
