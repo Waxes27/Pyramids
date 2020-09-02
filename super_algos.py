@@ -1,7 +1,7 @@
 import random
 
 #element = ['a',100,'b',4,-5]
-character_set = ['a','b']
+# character_set = ['a','b','C']
 n = 3
 
 def find_min(element):
@@ -42,9 +42,24 @@ def sum_all(element):
 
 
 def find_possible_strings(character_set, n):
-    if n = len(step):
-        print(character_set)
-    for i in range(n, len(character_set))
+    for x in character_set:
+        if type(x) != str or "" in character_set:
+            return []
+    list_ = []
+    prefix = ""
+    permutation(character_set, n, list_,prefix)
+    return list_
+
+def permutation(character_set, n, list_, prefix):
+    if n == 0:
+        list_.append(prefix)
+        return list_
+    for i in character_set:
+        new_prefix = prefix + i
+        permutation(character_set,n-1, list_, new_prefix)
+
+    
+
 
 if __name__ == "__main__":
-    find_possible_strings(character_set, n)
+    print(find_possible_strings(character_set, n))
