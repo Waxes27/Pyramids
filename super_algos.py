@@ -59,7 +59,5 @@ def permutation(character_set, n, list_, prefix):
         permutation(character_set,n-1, list_, new_prefix)
 
     
-
-
 if __name__ == "__main__":
     print(find_possible_strings(character_set, n))
